@@ -1,0 +1,136 @@
+* 053c91ee6e7993a3b54461ab8478ca60b6bdd3e6 :memo: add authors
+* ca5464bc3ccf73a92082de7bfbfc1d5b366f3a68 :bug: fix insert consulte in data base
+* 90f94a13612d7b87272f9faf97843d66d298902b :technologist: view login acconts
+* f814969d58fcec4bc54f2aa44ee5ff40f18e81d6 :passport_control: rote permission PSICOLOGO
+* ea7b523df9f21b4b72d29d82a04465c790729893 :safety_vest: alter notnull for notblank
+* 5e7e1b9d4fbf14ad3e4c2edfc997a221395cfcff :safety_vest: validations cadastrar paciente
+* d24a1f3967efc9348ada9546cc723ae756210f27 :card_file_box: alter usuario and usuario_papel
+* 813d37d244094d28da635a6026675427214afd34 :hammer: login
+* 858aa19ca81d19b1f9159fccca70b971f610a383 :sparkles: errors
+* 0bce55e2c8b667d6d609815d7f590d260981cda2 :sparkles: methods usuarios
+* 6676c6debe94c786dec51585fb591f907ed5a5c7 :hammer:update model
+* fb15df24b54c20b962b3c41bf3987f912c226901 :lock: update routes security
+* 8c5963f0adf22ae0b00f2277b85e701cca44b937 :passport_control: permissions in screen
+* 4805d0aaf29ba6b686725a385e02e4f3c8be0444 :wrench: configurations https
+* b9f1184d2eb314726147d2e0bfe3b52023dc2aee :card_file_box: new paper
+* 2a4aa862a2a5b9be8c79aa62ec1902d84f35188c :lock: create method to criptography
+* 0153f5e77580a3f46f4c03ab33fd50ee2196c0b3 :safety_vest: create for codes to validation
+* a4d4d158847cebb9a8d2ff01e0ccab7045e29042 :passport_control: redirect port to 8080 for port hhtps 8443
+* 2e8de21f9c6cd0b00778526325577a8cd675417e :children_crossing: create screen for login and cadastrar
+* 958c1a485e43d1cdc2bfa933c76699d8e2189714 :hammer: code for service to security using paper and users
+* 10bc86d38833ea600480fc00768d0264c5aeeaf7 :hammer: code for service to security using paper and users
+* 02a1c464fb111096567507a0e46588d5d4087f85 :sparkles: create methods controller for usuario
+* 71343cc1b5bbcf73c4308bc210a659ca04ab41d0 :hammer: create class model to users and papers
+* 566be7a2006f125cd3fe6994518474febd520d62 :card_file_box: create tables to users and papers
+* 4ef4c8f3c2814203ca67633d008fbb85e3494576 :lock: add class configuration spring security
+* ef208cd042eddc50f5f926eb5f8c574967b01f24 :hammer: create codes for requisition and notifications
+* e84a7172b1827a690039ce0aed03855ff408d94b :heavy_plus_sign: add depency for show security
+* acc48351c5ff8fca0a5ea68d79ab4cb920cff067 :lock: add camps security to login and create new user
+* 17de2d5d34081fb2326bb0cb3fd098c1f7fafe47 :heavy_plus_sign: security dependency
+* 706b2f784c001ffa879d69f62391154036047a7c :hammer: create methods escolher data e hora consulta
+* 63fa47f250b9585283c2487060856ddd134a8889 :sparkles: screen select date and time consulta
+* f78148b360494b9adf7640bf9689c88962b51fb8 :pencil2: organize package importe
+* ce9c541ca722dc349986162285fe8a14b6f6dbbc :poop: create screen cadastrar consulta
+* 3b1cc4f310f8e9900e00fa14ee75cbe7a4810e4d :children_crossing: create screen to pacientes
+* 442d55b99024e39d9a5e1118641b3e37e5283a17 :hammer: set null hora and consulteDate
+* 2437d17a014e220d3aeabd2af6507715026c1b65 :hammer: methods select paciente
+* b42e9d81326e6924fc3b488d496682c1fff718a9 :children_crossing: update search psicologos
+* dbbf9ae50d14a5a3899d8ec59b163e032edda27c :sparkles: screen select psicologo
+* 8a5bfb4aa0f6f469b6056be9cb8d1ab6fead3aec :sparkles: method search psicologos for consulta
+* 7f97a449b16a8a1e7e80c090950fe2aff5fc24b1 :sparkles: create button for angendar in cosulta
+* 7cac43e08bc8ad14eddba2840a7cadc64c97c2ad :hammer: codes for loggin scribe in terminal
+* 6b16f1692609ef9ff98bd73490d1746ed63fa231 :hammer: create session filter consulta
+* 87752c52894e361fa83b9a8dffa5c16ed2785d1d :fire: remove code specialty none
+* f27e08be1415a4af2e8896a2a3edf5ee9b8ee5f5 :hammer: create enum horari
+* d7de2516e08f0b30d1571d1db75af7a13d279aab :hammer: create file consulta filter
+* 250abe881c423ea961a5bb1c43676d774a7b353d :card_file_box: create table consulta
+* ab7e9f62a3a610697cd5b741fc15fb9d360b501f :technologist: organize sentence slq
+* 77d18befef09f303ef7a1a86f6ed89aac5243853 :hammer: code alterar and salvar in data base
+* 7444be545d947d7fdb73ed4382b30ed12598da4e :hammer: code searching using status
+* 7c87362f66bd157897e098cda1d9e66bc91996de :fire: remove atribute NONE
+* 760d75787fbdae0d1f096bdc4c8a1b158ad23a8b :recycle: alter variables consulta
+* ca96ad6b7b91486dd10ceabf224726d47cf720fb :hammer: creted controller consulta, create, alter, search and remove
+* 8a15dfd18040925e950ec955752c5c50afe4eb92 :sparkles: paciente add with remove and alter
+* 7b611123276e99b1ccb5e09acf42b7670d7c3865 :children_crossing: add view remove
+* 89a4ba2b7f2013bf8d5e829793a140e976c11ccd :hammer: code for search using status
+* c08c8e4ad73acf001128749362ce24bd3665cf65 :hammer: add status in paciente
+* 1ced67e5a104c6824de4c94cc3bcff69b561228e :hammer: alter code for search using status
+* f0c94e79ab00026c2504ddd823b145f7dab8f232 :card_file_box: add column status in paciente
+* 97608cb5c2aacde073cb674788dd4df0e4d20e0d :sparkles: alterar pacientes
+* 61e4d8eead3174e2f5ab6ca2cc26fa5177b281c5 :hammer: create method alter paciente
+* c85c3721c174f30d4fbffe49fd8efb4fe52951a8 :hammer: alter paciente
+* 1fc1b36f54900c62da351d7e03fc16129a908ad9 :fire: remove old imports
+* 5213d3438c388cc2e675636e137275c94d0be534 :hammer: add cadastrar
+* 40d03d3dc80ddfd58659262a3257b3cef0428e28 :hammer: create method salvar paciente in repository
+* a3e10ac1745fd956640947d3f133206f49e4bb96 :truck: rename class situation for status
+* a0b2de455507b750675dce5f97a1e4c34e8ccea2 :children_crossing: view cadastrar
+* dbb0e051aa6241a00f3c6859cfc9f7b6317e2471 :sparkles: search pacientes
+* f07a559128744314702ffbd970cd10af7c5df6eb :fire: remove interfaces names
+* 14f6f2743d00b49fb24c7716be7c1db48ef223be :children_crossing: alter interface user
+* 93c929bbe53aab451781f148251e2c03618d7ae0 :bug: alter type variables to string
+* e69dd1b998253375a046458d19f9f585a86e9c25 :pencil2: criteria sentence
+* b0c4227e1f3c72c7e814b49ce79f6bd6fe1c6b91 :hammer: search psicologos using filter Specialty
+* e38f5cd225b673d0695408243324745f7a4e4ef9 :construction: create search pacientes
+* 69dec01ef7d3ada39588d353432f573660762de2 :technologist: organize imports
+* 7338396da9addd71a74388890c290fafd15e10f0 :recycle: extends PacienteQueries in repository
+* c9ffa89fbb15ad54d6c186c784755146fe9f833e :hammer: create code for filter search pacientes
+* db5a32bdf3cbfde3eff42a15f3187b57a9ab9aab :hammer: custom search custom
+* ba0a82c5ca3981af349f6b66f936f6dea2be84ea :recycle: rename variables for equals sql
+* 16458a83df464bbc93ad17bef4895d3b06c53878 :truck: move for psicologo into helper
+* 338ba776b7750efb1cfec186315b27331c7e048d :pencil2: variables names
+* 735ebc02b7c7639116d6afcb41735a20708ac280 :recycle: create diretory psicologo in helper
+* d1516e867517a108417e20f5c20ea84122d52be4 :card_file_box: rename column
+* 9a03a90901f18a67c5701a946af49ff16c1b5d72 :lipstick: interfaces to search cpf
+* adfe353e8814488a83ce25e80eded59e5e572098 :sparkles: search using cpf
+* 3001338f73be8b44e155febd87463435c7ab7472 :children_crossing: filter method
+* 30e20a79a43fa35562103b854cbe18b1515ee9d7 :hammer: show data base informations
+* 24e6ccbd90989c85c5fef83276e02dfd6382d680 :bug: error divergence names to sql and class model
+* a695c44484afc2b92e05c1da2ce81b5b418a0976 :pencil2: typos insert sentece
+* a3cd9d04ec37893882a0fa0007a5d3216a5f7c6a :poop: select the psicologos
+* 790790c904d8d7a7740eb725814cb632c101637b :sparkles: add page to mostrartodas psicologos
+* d184d3dc5822b2d5f6179e0bbcc26e60c8bc7202 :sparkles: add html page to pesquisar psicologo
+* 9e84326dad272b3057add8ba9c69a5f72649fd00 :wrench: code s the pagination
+* e970eaf59ec4d636391ac63524d34fe5371ee494 :recycle: organize the repository
+* d7aefb3e6e0a248ac06718fc0f048de6eb972ccd :card_file_box: insert psicologos
+* 1fb5ec94a1afc1752fb548d75f0495c151654212 :bug: include the variable cpf
+* 756aac31be8420b84bdbe8c54ce9aac0c93eca8c :sparkles: add method search psicologos
+* a3b96c03f2b00bc3a06fe14596a8e04954f987fd :truck: rename models
+* 6d1a15b27ebd339f65ea68daf86bdd28fd1c11e5 :hammer: add psicologo controller
+* bbb542ea9ff077caf123bf376f5b57d970b5d52c :hammer: add pagination
+* 35cc6aeab558aa18fc838bbf28b9f863827de5c0 :truck: rename removing the word Model
+* 1636abe2986571d7e91b27800753f6b7d50746f6 :lipstick: center text opcoes
+* 8493f44edc8f560050cbdbdd6c649430b7363be9 :hammer: created psicologo service
+* 150882a1cdaee722dd4a920e3a5872424d9cf97b :hammer: created psicologo repository
+* b86f0355e903196a735e410855f5f872798659c7 :wrench: refactoring the configuration codes
+* 0cd1b99d6c4fc4f6a03eac09e3842dfcf79486b4 :lipstick: base templates
+* 2e0c403665331557cf424f731bfb0ac7e7d4effd :lipstick: fragments the main user interface
+* 1ce4319071ea0796a9130015fcad6d4206f10713 :children_crossing: add page errors
+* 606bcf0e335f5e5fcc304fb6f51a6072bc34ec45 :lipstick: add diretory with css files, js files, and images files
+* 316678cb3d643e61b04bd4222c2d5d05c966123c :card_file_box: update sql senteces
+* 45c1e17cf4d3c56478717bf31404853c1edc2b3d :wrench: organize configurations data base and flyway
+* 681c974d59936fb01bf29f521706be9069ec03a5 :bug: fixed the sql sintaxe
+* 63ecfc5420978432ca48a11718846f24ccd3c901 :hammer: create interface repository Consulta
+* 08f93659e194dc2c8dfd0cc57d83c75c8cae15fa :hammer: create class controller Consulta
+* f0c11727b16bb2a13fbc7123027cf939bb0ea6a7 :hammer: create class model Consulta
+* 8a5e2b92939f57500253fa834435c3ae6dd6ae34 :wrench: replace data base for h2
+* 0ffff94a0cd47063db64b7dc01ceeb1e60dc78dc :bug: error in service he was include annotation @service in class
+* 798be2a831afe452dcd36236c731fde01e011440 :hammer: create class service Consulta
+* 3f61a85ddf34e74305cc5658c4413192506e48e7 :pop: error in aplication.properties banq
+* 875226cd9637674754f0a83380c92bb895bd7328 :hammer: created class service Paciente
+* 097e14c2223b2e93ef461c83d19ae8ea4b5b9181 :hammer: created interface repository Paciente
+* c537a9f46dd5afbd396ba946cd99d0b2ad527f73 :hammer: created class controller Paciente
+* 7ca38d488a913adfcf84d4a703ee989ca3c5116e :hammer: created class model Consulta
+* 3618e55b1db9cf68f6b485522c9f9e6e7757162b :recycle: rename sequenceName in SequenceGenerator
+* 56033ce882f5d8b692db5105324769727fbdd2a7 :hammer: create enum Model Situation
+* 70b233ed037fb047dfe2885fc32ffcfb08baccbb :pencil2: rename Specialty for SpecialtyModel
+* 5e76cdf71ea623a090d90ca272a9740e8048cf09 :passport_control: adding notation to class
+* 6b526b6220fc637ea0c575dbd2f7b842d1c253d1 :hammer: created enum model Specialty
+* 54b33bfd507f1690e2b569bfbc2099968db607ef :hammer: created class model Psicologo
+* b980991d16a25858e8c8324468e1345ae4258d85 :hammer: created class model Paciente
+* 0eb1bd1ec15c47ca2af798704561b295664743f3 :recycle: refactor specialty
+* 3f6063a526cfcd37ed9e7035e841d6e854d4947b :card_file_box: alter column specialty
+* b734b40428afc64b0f5d2ae9de5df9f27bcac6d7 :card_file_box: create table consultas
+* dea7ad81e486bff993680aa799eb5d199a228d63 :card_file_box: create table psiclogo
+* 9576a09b20c1e5b5142428bec0cfc342e9410c7f :card_file_box: create table paciente
+* 5c71ab3f1a662eebc168064f0ef3a0b49911c4e9 :wrench: configuration initial files
+* 7587c0614c9b4e61153735222835004d8fa7cc4a :tada: initil commit

@@ -1,0 +1,1344 @@
+commit 053c91ee6e7993a3b54461ab8478ca60b6bdd3e6
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Thu Dec 15 08:53:13 2022 -0300
+
+    :memo: add authors
+
+ AUTHORS.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit ca5464bc3ccf73a92082de7bfbfc1d5b366f3a68
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 14 13:37:20 2022 -0300
+
+    :bug: fix insert consulte in data base
+
+ .../lindovaldo/controller/ConsultaController.java  | 29 +++++++++++-----------
+ .../daw2/lindovaldo/service/ConsultaService.java   | 10 +++++++-
+ .../resources/templates/consulta/cadastrar.html    |  5 ++--
+ 3 files changed, 25 insertions(+), 19 deletions(-)
+
+commit 90f94a13612d7b87272f9faf97843d66d298902b
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 14 11:41:15 2022 -0300
+
+    :technologist: view login acconts
+
+ src/main/resources/templates/login.html | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit f814969d58fcec4bc54f2aa44ee5ff40f18e81d6
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 14 11:40:33 2022 -0300
+
+    :passport_control: rote permission PSICOLOGO
+
+ src/main/java/com/daw2/lindovaldo/config/SecurityConfig.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit ea7b523df9f21b4b72d29d82a04465c790729893
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 14 11:39:58 2022 -0300
+
+    :safety_vest: alter notnull for notblank
+
+ src/main/java/com/daw2/lindovaldo/model/Paciente.java  |  5 +++--
+ src/main/java/com/daw2/lindovaldo/model/Psicologo.java |  4 +++-
+ src/main/java/com/daw2/lindovaldo/model/Usuario.java   | 12 +-----------
+ 3 files changed, 7 insertions(+), 14 deletions(-)
+
+commit 5e7e1b9d4fbf14ad3e4c2edfc997a221395cfcff
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 14 11:38:32 2022 -0300
+
+    :safety_vest: validations cadastrar paciente
+
+ src/main/java/com/daw2/lindovaldo/controller/PacienteController.java | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit d24a1f3967efc9348ada9546cc723ae756210f27
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 14 11:36:20 2022 -0300
+
+    :card_file_box: alter usuario and usuario_papel
+
+ .../db/migration/V04__cria_as_tabelas_de_seguranca.sql       |  1 -
+ .../db/migration/V05__insercao_dados_padrao_spring.sql       | 12 ++++++------
+ 2 files changed, 6 insertions(+), 7 deletions(-)
+
+commit 813d37d244094d28da635a6026675427214afd34
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 14 09:20:56 2022 -0300
+
+    :hammer: login
+
+ src/main/java/com/daw2/lindovaldo/controller/IndexController.java | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 858aa19ca81d19b1f9159fccca70b971f610a383
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 14 09:18:36 2022 -0300
+
+    :sparkles: errors
+
+ .../lindovaldo/controller/ErrosController.java     | 41 ++++++++++++++++++++++
+ 1 file changed, 41 insertions(+)
+
+commit 0bce55e2c8b667d6d609815d7f590d260981cda2
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 13:20:17 2022 -0300
+
+    :sparkles: methods usuarios
+
+ .../lindovaldo/controller/UsuarioController.java   | 30 ++++++++++++++--------
+ 1 file changed, 20 insertions(+), 10 deletions(-)
+
+commit 6676c6debe94c786dec51585fb591f907ed5a5c7
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 13:19:29 2022 -0300
+
+    :hammer:update model
+
+ src/main/java/com/daw2/lindovaldo/model/Usuario.java | 16 ++++++++++++++--
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+
+commit fb15df24b54c20b962b3c41bf3987f912c226901
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 13:18:26 2022 -0300
+
+    :lock: update routes security
+
+ src/main/java/com/daw2/lindovaldo/config/SecurityConfig.java | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 8c5963f0adf22ae0b00f2277b85e701cca44b937
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 13:17:42 2022 -0300
+
+    :passport_control: permissions in screen
+
+ .../resources/templates/consulta/cadastrar.html    | 14 ++--
+ .../templates/consulta/escolherdiahora.html        |  5 +-
+ .../templates/layout/fragments/sidebar.html        | 89 ++++++++++++----------
+ .../resources/templates/usuario/cadastrar.html     | 17 +++--
+ 4 files changed, 70 insertions(+), 55 deletions(-)
+
+commit 4805d0aaf29ba6b686725a385e02e4f3c8be0444
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 13:16:51 2022 -0300
+
+    :wrench: configurations https
+
+ src/main/resources/application.properties | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit b9f1184d2eb314726147d2e0bfe3b52023dc2aee
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 13:14:45 2022 -0300
+
+    :card_file_box: new paper
+
+ src/main/resources/db/migration/V05__insercao_dados_padrao_spring.sql | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 2a4aa862a2a5b9be8c79aa62ec1902d84f35188c
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 13:02:29 2022 -0300
+
+    :lock: create method to criptography
+
+ src/main/resources/keystore.p12 | Bin 0 -> 2744 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 0153f5e77580a3f46f4c03ab33fd50ee2196c0b3
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 13:00:42 2022 -0300
+
+    :safety_vest: create for codes to validation
+
+ .../validation/BigDecimalAttributesRelation.java   |  40 ++++++
+ .../validation/BigIntegerAttributesRelation.java   |  40 ++++++
+ .../validation/DoubleAttributesRelation.java       |  42 ++++++
+ .../validation/IntegerAttributesRelation.java      |  40 ++++++
+ .../validation/NotNullIfAnotherFieldHasValue.java  |  40 ++++++
+ .../lindovaldo/validation/TwoEqualAttributes.java  |  33 +++++
+ .../validation/UniqueValueAttribute.java           |  90 ++++++++++++
+ .../daw2/lindovaldo/validation/ValidUsername.java  |  26 ++++
+ .../lindovaldo/validation/WellFormedEmail.java     |  26 ++++
+ .../validation/util/AttributesRelation.java        |   5 +
+ .../lindovaldo/validation/util/ReflectUtil.java    |  29 ++++
+ .../BigDecimalAttributesRelationValidator.java     | 100 ++++++++++++++
+ .../BigIntegerAttributesRelationValidator.java     | 100 ++++++++++++++
+ .../DoubleAttributesRelationValidator.java         | 128 +++++++++++++++++
+ .../IntegerAttributesRelationValidator.java        | 121 ++++++++++++++++
+ .../NotNullIfAnotherFieldHasValueValidator.java    |  43 ++++++
+ .../validator/TwoEqualAttributesValidator.java     |  58 ++++++++
+ .../validator/UniqueValueAttributeValidator.java   |  50 +++++++
+ .../validator/ValidUsernameValidator.java          | 152 +++++++++++++++++++++
+ .../validator/WellFormedEmailValidator.java        |  67 +++++++++
+ 20 files changed, 1230 insertions(+)
+
+commit a4d4d158847cebb9a8d2ff01e0ccab7045e29042
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 12:59:24 2022 -0300
+
+    :passport_control: redirect port to 8080 for port hhtps 8443
+
+ src/main/java/com/daw2/lindovaldo/Main.java | 36 +++++++++++++++++++++++++++++
+ 1 file changed, 36 insertions(+)
+
+commit 2e8de21f9c6cd0b00778526325577a8cd675417e
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 01:49:20 2022 -0300
+
+    :children_crossing: create screen for login and cadastrar
+
+ src/main/resources/templates/login.html            | 42 +++++++++++++++++
+ .../resources/templates/usuario/cadastrar.html     | 54 ++++++++++++++++++++++
+ 2 files changed, 96 insertions(+)
+
+commit 958c1a485e43d1cdc2bfa933c76699d8e2189714
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 01:48:21 2022 -0300
+
+    :hammer: code for service to security using paper and users
+
+ .../lindovaldo/service/CadastroUsuarioService.java | 20 +++++++++
+ .../service/NomeUsuarioUnicoService.java           |  5 +++
+ .../service/NomeUsuarioUnicoServiceImpl.java       | 50 ++++++++++++++++++++++
+ .../lindovaldo/validation/service/UniqueValue.java |  5 +++
+ 4 files changed, 80 insertions(+)
+
+commit 10bc86d38833ea600480fc00768d0264c5aeeaf7
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 01:47:40 2022 -0300
+
+    :hammer: code for service to security using paper and users
+
+ .../java/com/daw2/lindovaldo/repository/PapelRepository.java  |  8 ++++++++
+ .../com/daw2/lindovaldo/repository/UsuarioRepository.java     | 11 +++++++++++
+ 2 files changed, 19 insertions(+)
+
+commit 02a1c464fb111096567507a0e46588d5d4087f85
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 01:46:49 2022 -0300
+
+    :sparkles: create methods controller for usuario
+
+ .../lindovaldo/controller/IndexController.java     | 13 +++++
+ .../lindovaldo/controller/UsuarioController.java   | 64 ++++++++++++++++++++++
+ 2 files changed, 77 insertions(+)
+
+commit 71343cc1b5bbcf73c4308bc210a659ca04ab41d0
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 01:45:50 2022 -0300
+
+    :hammer: create class model to users and papers
+
+ src/main/java/com/daw2/lindovaldo/model/Papel.java |  70 ++++++++++
+ .../java/com/daw2/lindovaldo/model/Usuario.java    | 143 +++++++++++++++++++++
+ 2 files changed, 213 insertions(+)
+
+commit 566be7a2006f125cd3fe6994518474febd520d62
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 01:41:56 2022 -0300
+
+    :card_file_box: create tables to users and papers
+
+ .../V04__cria_as_tabelas_de_seguranca.sql          | 39 ++++++++++++++++++++++
+ .../V05__insercao_dados_padrao_spring.sql          | 14 ++++++++
+ 2 files changed, 53 insertions(+)
+
+commit 4ef4c8f3c2814203ca67633d008fbb85e3494576
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 01:40:29 2022 -0300
+
+    :lock: add class configuration spring security
+
+ .../com/daw2/lindovaldo/config/SecurityConfig.java | 86 ++++++++++++++++++++++
+ 1 file changed, 86 insertions(+)
+
+commit ef208cd042eddc50f5f926eb5f8c574967b01f24
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 01:39:38 2022 -0300
+
+    :hammer: create codes for requisition and notifications
+
+ .../daw2/lindovaldo/ajax/NotificacaoAlertify.java  | 58 +++++++++++++++++
+ .../com/daw2/lindovaldo/ajax/RespostaJSON.java     | 74 ++++++++++++++++++++++
+ .../com/daw2/lindovaldo/ajax/ThymeleafUtil.java    | 50 +++++++++++++++
+ .../lindovaldo/ajax/TipoNotificacaoAlertify.java   | 19 ++++++
+ .../com/daw2/lindovaldo/ajax/TipoResposta.java     | 19 ++++++
+ 5 files changed, 220 insertions(+)
+
+commit e84a7172b1827a690039ce0aed03855ff408d94b
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 01:38:10 2022 -0300
+
+    :heavy_plus_sign: add depency for show security
+
+ src/main/resources/log4j2.xml | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit acc48351c5ff8fca0a5ea68d79ab4cb920cff067
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 13 01:36:30 2022 -0300
+
+    :lock: add camps security to login and create new user
+
+ .../templates/layout/fragments/navbar.html         | 71 ++++++++++++----------
+ .../templates/layout/fragments/sidebar.html        | 28 +++++++++
+ 2 files changed, 68 insertions(+), 31 deletions(-)
+
+commit 17de2d5d34081fb2326bb0cb3fd098c1f7fafe47
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 12 23:37:37 2022 -0300
+
+    :heavy_plus_sign: security dependency
+
+ pom.xml | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+commit 706b2f784c001ffa879d69f62391154036047a7c
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 12 14:33:08 2022 -0300
+
+    :hammer: create methods escolher data e hora consulta
+
+ .../daw2/lindovaldo/controller/ConsultaController.java | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+
+commit 63fa47f250b9585283c2487060856ddd134a8889
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 12 14:32:34 2022 -0300
+
+    :sparkles: screen select date and time consulta
+
+ .../resources/templates/consulta/cadastrar.html    | 63 ++++++++++------------
+ .../templates/consulta/escolherdiahora.html        | 38 +++++++++++++
+ 2 files changed, 67 insertions(+), 34 deletions(-)
+
+commit f78148b360494b9adf7640bf9689c88962b51fb8
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 12 01:15:38 2022 -0300
+
+    :pencil2: organize package importe
+
+ src/main/java/com/daw2/lindovaldo/aop/ApplicationLoggingAspect.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit ce9c541ca722dc349986162285fe8a14b6f6dbbc
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 12 01:13:16 2022 -0300
+
+    :poop: create screen cadastrar consulta
+
+ .../resources/templates/consulta/cadastrar.html    | 30 +++++++++++++++++++---
+ 1 file changed, 26 insertions(+), 4 deletions(-)
+
+commit 3b1cc4f310f8e9900e00fa14ee75cbe7a4810e4d
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 12 01:11:40 2022 -0300
+
+    :children_crossing: create screen to pacientes
+
+ .../templates/consulta/escolherpaciente.html       | 24 ++++++++++++
+ .../templates/consulta/mostrarpaciente.html        | 45 ++++++++++++++++++++++
+ 2 files changed, 69 insertions(+)
+
+commit 442d55b99024e39d9a5e1118641b3e37e5283a17
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 12 01:10:17 2022 -0300
+
+    :hammer: set null hora and consulteDate
+
+ src/main/java/com/daw2/lindovaldo/filter/CosultaSessionFilter.java | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 2437d17a014e220d3aeabd2af6507715026c1b65
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 12 01:09:15 2022 -0300
+
+    :hammer: methods select paciente
+
+ .../lindovaldo/controller/ConsultaController.java  | 65 +++++++++++-----------
+ 1 file changed, 34 insertions(+), 31 deletions(-)
+
+commit b42e9d81326e6924fc3b488d496682c1fff718a9
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Sun Dec 11 23:55:32 2022 -0300
+
+    :children_crossing: update search psicologos
+
+ src/main/resources/templates/paciente/pesquisar.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit dbbf9ae50d14a5a3899d8ec59b163e032edda27c
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Sun Dec 11 23:53:34 2022 -0300
+
+    :sparkles: screen select psicologo
+
+ .../resources/templates/consulta/cadastrar.html    | 37 +++++++++++++++++
+ .../templates/consulta/escolherpsicologo.html      | 24 +++++++++++
+ .../templates/consulta/mostrarpsicologo.html       | 46 ++++++++++++++++++++++
+ 3 files changed, 107 insertions(+)
+
+commit 8a5bfb4aa0f6f469b6056be9cb8d1ab6fead3aec
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Sun Dec 11 23:51:42 2022 -0300
+
+    :sparkles: method search psicologos for consulta
+
+ .../lindovaldo/controller/ConsultaController.java  | 157 ++++++++++++---------
+ 1 file changed, 89 insertions(+), 68 deletions(-)
+
+commit 7f97a449b16a8a1e7e80c090950fe2aff5fc24b1
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Sun Dec 11 22:10:17 2022 -0300
+
+    :sparkles: create button for angendar in cosulta
+
+ src/main/resources/templates/layout/fragments/sidebar.html | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit 7cac43e08bc8ad14eddba2840a7cadc64c97c2ad
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Sun Dec 11 22:09:09 2022 -0300
+
+    :hammer: codes for loggin scribe in terminal
+
+ .../lindovaldo/aop/ApplicationLoggingAspect.java   | 135 +++++++++++++++++++++
+ 1 file changed, 135 insertions(+)
+
+commit 6b16f1692609ef9ff98bd73490d1746ed63fa231
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Sun Dec 11 22:08:03 2022 -0300
+
+    :hammer: create session filter consulta
+
+ .../lindovaldo/filter/CosultaSessionFilter.java    | 51 ++++++++++++++++++++++
+ 1 file changed, 51 insertions(+)
+
+commit 87752c52894e361fa83b9a8dffa5c16ed2785d1d
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Thu Dec 8 15:47:12 2022 -0300
+
+    :fire: remove code specialty none
+
+ src/main/java/com/daw2/lindovaldo/model/Psicologo.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f27e08be1415a4af2e8896a2a3edf5ee9b8ee5f5
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Thu Dec 8 15:45:54 2022 -0300
+
+    :hammer: create enum horari
+
+ .../java/com/daw2/lindovaldo/model/Horario.java    | 28 ++++++++++++++++++++++
+ 1 file changed, 28 insertions(+)
+
+commit d7de2516e08f0b30d1571d1db75af7a13d279aab
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Thu Dec 8 15:45:05 2022 -0300
+
+    :hammer: create file consulta filter
+
+ .../lindovaldo/model/filter/ConsultaFilter.java    | 62 ++++++++++++++++++++++
+ 1 file changed, 62 insertions(+)
+
+commit 250abe881c423ea961a5bb1c43676d774a7b353d
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Thu Dec 8 15:44:22 2022 -0300
+
+    :card_file_box: create table consulta
+
+ .../db/migration/V03__cria_tabela_consultas.sql      | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+
+commit ab7e9f62a3a610697cd5b741fc15fb9d360b501f
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Thu Dec 8 15:43:26 2022 -0300
+
+    :technologist: organize sentence slq
+
+ src/main/resources/db/migration/V01__cria_tabela_paciente.sql  | 8 ++++----
+ src/main/resources/db/migration/V02__cria_tabela_psicologo.sql | 6 +++---
+ 2 files changed, 7 insertions(+), 7 deletions(-)
+
+commit 77d18befef09f303ef7a1a86f6ed89aac5243853
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Thu Dec 8 15:42:21 2022 -0300
+
+    :hammer: code alterar and salvar in data base
+
+ src/main/java/com/daw2/lindovaldo/service/ConsultaService.java | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit 7444be545d947d7fdb73ed4382b30ed12598da4e
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Thu Dec 8 15:40:57 2022 -0300
+
+    :hammer: code searching using status
+
+ .../lindovaldo/repository/ConsultaRepository.java  | 12 +++-
+ .../helper/consulta/ConsultaQueries.java           | 13 +++++
+ .../helper/consulta/ConsultaQueriesImpl.java       | 65 ++++++++++++++++++++++
+ 3 files changed, 88 insertions(+), 2 deletions(-)
+
+commit 7c87362f66bd157897e098cda1d9e66bc91996de
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Thu Dec 8 15:39:22 2022 -0300
+
+    :fire: remove atribute NONE
+
+ src/main/java/com/daw2/lindovaldo/model/Specialty.java | 1 -
+ src/main/java/com/daw2/lindovaldo/model/Status.java    | 1 -
+ 2 files changed, 2 deletions(-)
+
+commit 760d75787fbdae0d1f096bdc4c8a1b158ad23a8b
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Thu Dec 8 15:38:17 2022 -0300
+
+    :recycle: alter variables consulta
+
+ .../java/com/daw2/lindovaldo/model/Consulta.java   | 105 ++++++++++++++++-----
+ 1 file changed, 79 insertions(+), 26 deletions(-)
+
+commit ca96ad6b7b91486dd10ceabf224726d47cf720fb
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Thu Dec 8 15:33:16 2022 -0300
+
+    :hammer: creted controller consulta, create, alter, search and remove
+
+ .../lindovaldo/controller/ConsultaController.java  | 89 +++++++++++++++++++++-
+ 1 file changed, 86 insertions(+), 3 deletions(-)
+
+commit 8a15dfd18040925e950ec955752c5c50afe4eb92
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 15:50:36 2022 -0300
+
+    :sparkles: paciente add with remove and alter
+
+ .../lindovaldo/controller/PacienteController.java   | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+
+commit 7b611123276e99b1ccb5e09acf42b7670d7c3865
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 15:48:56 2022 -0300
+
+    :children_crossing: add view remove
+
+ src/main/resources/templates/paciente/remover.html | 52 ++++++++++++++++++++++
+ 1 file changed, 52 insertions(+)
+
+commit 89a4ba2b7f2013bf8d5e829793a140e976c11ccd
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 15:46:18 2022 -0300
+
+    :hammer: code for search using status
+
+ src/main/java/com/daw2/lindovaldo/repository/PacienteRepository.java | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit c08c8e4ad73acf001128749362ce24bd3665cf65
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 15:44:49 2022 -0300
+
+    :hammer: add status in paciente
+
+ src/main/java/com/daw2/lindovaldo/model/Paciente.java    | 16 +++++++++++++++-
+ .../com/daw2/lindovaldo/model/filter/PacienteFilter.java |  8 ++++++++
+ 2 files changed, 23 insertions(+), 1 deletion(-)
+
+commit 1ced67e5a104c6824de4c94cc3bcff69b561228e
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 15:43:58 2022 -0300
+
+    :hammer: alter code for search using status
+
+ .../lindovaldo/repository/helper/paciente/PacienteQueriesImpl.java     | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit f0c94e79ab00026c2504ddd823b145f7dab8f232
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 15:43:02 2022 -0300
+
+    :card_file_box: add column status in paciente
+
+ src/main/resources/db/migration/V01__cria_tabela_paciente.sql | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 97608cb5c2aacde073cb674788dd4df0e4d20e0d
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 15:22:21 2022 -0300
+
+    :sparkles: alterar pacientes
+
+ src/main/resources/templates/paciente/alterar.html | 47 ++++++++++++++++++++++
+ 1 file changed, 47 insertions(+)
+
+commit 61e4d8eead3174e2f5ab6ca2cc26fa5177b281c5
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 15:21:45 2022 -0300
+
+    :hammer: create method alter paciente
+
+ src/main/java/com/daw2/lindovaldo/service/PacienteService.java | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit c85c3721c174f30d4fbffe49fd8efb4fe52951a8
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 15:21:09 2022 -0300
+
+    :hammer: alter paciente
+
+ .../lindovaldo/controller/PacienteController.java  | 23 ++++++++++++++++++++--
+ 1 file changed, 21 insertions(+), 2 deletions(-)
+
+commit 1fc1b36f54900c62da351d7e03fc16129a908ad9
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 15:09:44 2022 -0300
+
+    :fire: remove old imports
+
+ .../lindovaldo/controller/PacienteController.java    |  1 -
+ .../java/com/daw2/lindovaldo/model/Consulta.java     | 20 ++++++++++++--------
+ .../lindovaldo/model/filter/PsicologoFilter.java     |  2 --
+ .../lindovaldo/repository/ConsultaRepository.java    |  4 ++--
+ .../helper/paciente/PacienteQueriesImpl.java         |  2 --
+ 5 files changed, 14 insertions(+), 15 deletions(-)
+
+commit 5213d3438c388cc2e675636e137275c94d0be534
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 15:01:23 2022 -0300
+
+    :hammer: add cadastrar
+
+ .../lindovaldo/controller/PacienteController.java  | 23 ++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+
+commit 40d03d3dc80ddfd58659262a3257b3cef0428e28
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 14:58:14 2022 -0300
+
+    :hammer: create method salvar paciente in repository
+
+ src/main/java/com/daw2/lindovaldo/service/PacienteService.java | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit a3e10ac1745fd956640947d3f133206f49e4bb96
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 14:56:10 2022 -0300
+
+    :truck: rename class situation for status
+
+ .../com/daw2/lindovaldo/model/{Situation.java => Status.java}  | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+
+commit a0b2de455507b750675dce5f97a1e4c34e8ccea2
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 14:50:01 2022 -0300
+
+    :children_crossing: view cadastrar
+
+ .../resources/templates/paciente/cadastrar.html    | 51 ++++++++++++++++++++++
+ 1 file changed, 51 insertions(+)
+
+commit dbb0e051aa6241a00f3c6859cfc9f7b6317e2471
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 13:24:30 2022 -0300
+
+    :sparkles: search pacientes
+
+ .../resources/templates/paciente/mostrartodas.html | 77 ++++++++++++++++++++++
+ .../resources/templates/paciente/pesquisar.html    | 62 +++++++++++++++++
+ 2 files changed, 139 insertions(+)
+
+commit f07a559128744314702ffbd970cd10af7c5df6eb
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 13:14:19 2022 -0300
+
+    :fire: remove interfaces names
+
+ src/main/resources/templates/psicologo/pesquisar.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 14f6f2743d00b49fb24c7716be7c1db48ef223be
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 13:05:00 2022 -0300
+
+    :children_crossing: alter interface user
+
+ .../java/com/daw2/lindovaldo/model/Specialty.java   | 10 ++++++----
+ .../resources/templates/psicologo/mostrartodas.html |  2 +-
+ .../resources/templates/psicologo/pesquisar.html    | 21 +++++++++++----------
+ 3 files changed, 18 insertions(+), 15 deletions(-)
+
+commit 93c929bbe53aab451781f148251e2c03618d7ae0
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 13:03:20 2022 -0300
+
+    :bug: alter type variables to string
+
+ src/main/java/com/daw2/lindovaldo/model/filter/PsicologoFilter.java | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit e69dd1b998253375a046458d19f9f585a86e9c25
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 13:02:15 2022 -0300
+
+    :pencil2: criteria sentence
+
+ .../repository/helper/psicologo/PsicologoQueriesImpl.java          | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+
+commit b0c4227e1f3c72c7e814b49ce79f6bd6fe1c6b91
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Dec 7 11:57:50 2022 -0300
+
+    :hammer: search psicologos using filter Specialty
+
+ .../repository/helper/psicologo/PsicologoQueriesImpl.java           | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit e38f5cd225b673d0695408243324745f7a4e4ef9
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 15:42:04 2022 -0300
+
+    :construction: create search pacientes
+
+ .../lindovaldo/controller/PacienteController.java  | 34 ++++++++++++++++++++--
+ 1 file changed, 32 insertions(+), 2 deletions(-)
+
+commit 69dec01ef7d3ada39588d353432f573660762de2
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 15:40:33 2022 -0300
+
+    :technologist: organize imports
+
+ .../lindovaldo/controller/PsicologoController.java    | 19 ++++++++-----------
+ .../lindovaldo/repository/PsicologoRepository.java    |  5 +++--
+ 2 files changed, 11 insertions(+), 13 deletions(-)
+
+commit 7338396da9addd71a74388890c290fafd15e10f0
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 15:38:11 2022 -0300
+
+    :recycle: extends PacienteQueries in repository
+
+ src/main/java/com/daw2/lindovaldo/repository/PacienteRepository.java | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit c9ffa89fbb15ad54d6c186c784755146fe9f833e
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 15:36:53 2022 -0300
+
+    :hammer: create code for filter search pacientes
+
+ .../lindovaldo/model/filter/PacienteFilter.java    | 33 ++++++++++++++++++++++
+ 1 file changed, 33 insertions(+)
+
+commit db5a32bdf3cbfde3eff42a15f3187b57a9ab9aab
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 15:36:06 2022 -0300
+
+    :hammer: custom search custom
+
+ .../helper/paciente/PacienteQueries.java           | 13 ++++
+ .../helper/paciente/PacienteQueriesImpl.java       | 69 ++++++++++++++++++++++
+ 2 files changed, 82 insertions(+)
+
+commit ba0a82c5ca3981af349f6b66f936f6dea2be84ea
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 15:34:23 2022 -0300
+
+    :recycle: rename variables for equals sql
+
+ .../java/com/daw2/lindovaldo/model/Paciente.java   | 78 ++++++++++++----------
+ 1 file changed, 42 insertions(+), 36 deletions(-)
+
+commit 16458a83df464bbc93ad17bef4895d3b06c53878
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 15:32:18 2022 -0300
+
+    :truck: move for psicologo into helper
+
+ .../repository/helper/PsicologoQueries.java        | 13 -----
+ .../repository/helper/PsicologoQueriesImpl.java    | 67 ----------------------
+ 2 files changed, 80 deletions(-)
+
+commit 338ba776b7750efb1cfec186315b27331c7e048d
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 15:29:16 2022 -0300
+
+    :pencil2: variables names
+
+ .../lindovaldo/model/filter/PsicologoFilter.java   | 31 +++++++++++++---------
+ 1 file changed, 18 insertions(+), 13 deletions(-)
+
+commit 735ebc02b7c7639116d6afcb41735a20708ac280
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 15:26:55 2022 -0300
+
+    :recycle: create diretory psicologo in helper
+
+ .../helper/psicologo/PsicologoQueries.java         | 13 +++++
+ .../helper/psicologo/PsicologoQueriesImpl.java     | 67 ++++++++++++++++++++++
+ 2 files changed, 80 insertions(+)
+
+commit d1516e867517a108417e20f5c20ea84122d52be4
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 15:25:17 2022 -0300
+
+    :card_file_box: rename column
+
+ src/main/resources/db/migration/V01__cria_tabela_paciente.sql | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit 9a03a90901f18a67c5701a946af49ff16c1b5d72
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 15:04:32 2022 -0300
+
+    :lipstick: interfaces to search cpf
+
+ src/main/resources/templates/psicologo/mostrartodas.html | 10 +++++-----
+ src/main/resources/templates/psicologo/pesquisar.html    |  6 +++---
+ 2 files changed, 8 insertions(+), 8 deletions(-)
+
+commit adfe353e8814488a83ce25e80eded59e5e572098
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 15:02:17 2022 -0300
+
+    :sparkles: search using cpf
+
+ .../repository/helper/PsicologoQueriesImpl.java    | 32 ++++++++++------------
+ 1 file changed, 15 insertions(+), 17 deletions(-)
+
+commit 3001338f73be8b44e155febd87463435c7ab7472
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 14:42:48 2022 -0300
+
+    :children_crossing: filter method
+
+ .../resources/templates/psicologo/pesquisar.html   | 104 ++++++++++++++-------
+ 1 file changed, 69 insertions(+), 35 deletions(-)
+
+commit 30e20a79a43fa35562103b854cbe18b1515ee9d7
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 14:37:54 2022 -0300
+
+    :hammer: show data base informations
+
+ .../templates/psicologo/mostrartodas.html          | 146 +++++++++++++--------
+ 1 file changed, 89 insertions(+), 57 deletions(-)
+
+commit 24e6ccbd90989c85c5fef83276e02dfd6382d680
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 14:35:44 2022 -0300
+
+    :bug: error divergence names to sql and class model
+
+ .../java/com/daw2/lindovaldo/model/Psicologo.java   | 21 ++++++++++-----------
+ 1 file changed, 10 insertions(+), 11 deletions(-)
+
+commit a695c44484afc2b92e05c1da2ce81b5b418a0976
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Dec 6 14:23:03 2022 -0300
+
+    :pencil2: typos insert sentece
+
+ src/main/resources/db/migration/V02__cria_tabela_psicologo.sql | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit a3cd9d04ec37893882a0fa0007a5d3216a5f7c6a
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 23:53:19 2022 -0300
+
+    :poop: select the psicologos
+
+ .../repository/helper/PsicologoQueriesImpl.java    | 69 ++++++++++++++++++++++
+ 1 file changed, 69 insertions(+)
+
+commit 790790c904d8d7a7740eb725814cb632c101637b
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 23:52:36 2022 -0300
+
+    :sparkles: add page to mostrartodas psicologos
+
+ .../templates/psicologo/mostrartodas.html          | 59 ++++++++++++++++++++++
+ 1 file changed, 59 insertions(+)
+
+commit d184d3dc5822b2d5f6179e0bbcc26e60c8bc7202
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 23:51:09 2022 -0300
+
+    :sparkles: add html page to pesquisar psicologo
+
+ .../resources/templates/psicologo/pesquisar.html   | 38 ++++++++++++++++++++++
+ 1 file changed, 38 insertions(+)
+
+commit 9e84326dad272b3057add8ba9c69a5f72649fd00
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 23:48:22 2022 -0300
+
+    :wrench: code s the pagination
+
+ .../repository/pagination/PaginacaoUtil.java       | 58 ++++++++++++++++++++++
+ 1 file changed, 58 insertions(+)
+
+commit e970eaf59ec4d636391ac63524d34fe5371ee494
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 23:45:53 2022 -0300
+
+    :recycle: organize the repository
+
+ .../com/daw2/lindovaldo/repository/PsicologoRepository.java |  3 ++-
+ .../daw2/lindovaldo/repository/helper/PsicologoQueries.java | 13 +++++++++++++
+ 2 files changed, 15 insertions(+), 1 deletion(-)
+
+commit d7aefb3e6e0a248ac06718fc0f048de6eb972ccd
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 23:40:55 2022 -0300
+
+    :card_file_box: insert psicologos
+
+ src/main/resources/db/migration/V02__cria_tabela_psicologo.sql | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+commit 1fb5ec94a1afc1752fb548d75f0495c151654212
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 23:39:20 2022 -0300
+
+    :bug: include the variable cpf
+
+ .../java/com/daw2/lindovaldo/model/Psicologo.java  | 142 ++++++++++++---------
+ .../lindovaldo/model/filter/PsicologoFilter.java   |  32 ++---
+ 2 files changed, 96 insertions(+), 78 deletions(-)
+
+commit 756aac31be8420b84bdbe8c54ce9aac0c93eca8c
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 23:38:19 2022 -0300
+
+    :sparkles: add method search psicologos
+
+ .../lindovaldo/controller/ConsultaController.java  | 12 ++++++---
+ .../lindovaldo/controller/PacienteController.java  |  2 +-
+ .../lindovaldo/controller/PsicologoController.java | 31 ++++++++++------------
+ 3 files changed, 24 insertions(+), 21 deletions(-)
+
+commit a3b96c03f2b00bc3a06fe14596a8e04954f987fd
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 21:57:17 2022 -0300
+
+    :truck: rename models
+
+ src/main/java/com/daw2/lindovaldo/repository/ConsultaRepository.java  | 4 ++--
+ src/main/java/com/daw2/lindovaldo/repository/PacienteRepository.java  | 4 ++--
+ src/main/java/com/daw2/lindovaldo/repository/PsicologoRepository.java | 4 ++--
+ src/main/java/com/daw2/lindovaldo/service/PacienteService.java        | 2 +-
+ 4 files changed, 7 insertions(+), 7 deletions(-)
+
+commit 6d1a15b27ebd339f65ea68daf86bdd28fd1c11e5
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 21:55:17 2022 -0300
+
+    :hammer: add psicologo controller
+
+ .../lindovaldo/controller/PsicologoController.java | 54 ++++++++++++++++++++++
+ 1 file changed, 54 insertions(+)
+
+commit bbb542ea9ff077caf123bf376f5b57d970b5d52c
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 21:53:47 2022 -0300
+
+    :hammer: add pagination
+
+ src/main/java/pagination/PageWrapper.java | 192 ++++++++++++++++++++++++++++++
+ 1 file changed, 192 insertions(+)
+
+commit 35cc6aeab558aa18fc838bbf28b9f863827de5c0
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 21:52:58 2022 -0300
+
+    :truck: rename removing the word Model
+
+ .../model/{ConsultaModel.java => Consulta.java}    | 22 ++++++------
+ .../model/{PacienteModel.java => Paciente.java}    |  4 +--
+ .../model/{PsicologoModel.java => Psicologo.java}  | 10 +++---
+ .../model/{SituationModel.java => Situation.java}  |  4 +--
+ .../model/{SpecialtyModel.java => Specialty.java}  |  4 +--
+ .../lindovaldo/model/filter/PsicologoFilter.java   | 39 ++++++++++++++++++++++
+ 6 files changed, 61 insertions(+), 22 deletions(-)
+
+commit 1636abe2986571d7e91b27800753f6b7d50746f6
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 20:05:46 2022 -0300
+
+    :lipstick: center text opcoes
+
+ .../templates/layout/fragments/sidebar.html        | 26 +++++++++++-----------
+ 1 file changed, 13 insertions(+), 13 deletions(-)
+
+commit 8493f44edc8f560050cbdbdd6c649430b7363be9
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 20:02:01 2022 -0300
+
+    :hammer: created psicologo service
+
+ .../java/com/daw2/lindovaldo/service/PsicologoService.java  | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+
+commit 150882a1cdaee722dd4a920e3a5872424d9cf97b
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 20:01:49 2022 -0300
+
+    :hammer: created psicologo repository
+
+ .../java/com/daw2/lindovaldo/repository/PsicologoRepository.java   | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit b86f0355e903196a735e410855f5f872798659c7
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 19:32:12 2022 -0300
+
+    :wrench: refactoring the configuration codes
+
+ src/main/resources/application.properties | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+
+commit 0cd1b99d6c4fc4f6a03eac09e3842dfcf79486b4
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 19:29:03 2022 -0300
+
+    :lipstick: base templates
+
+ src/main/resources/templates/index.html            |  23 ++++
+ .../resources/templates/layout/layoutpadrao.html   |  50 ++++++++
+ src/main/resources/templates/mostrarmensagem.html  |  20 ++++
+ src/main/resources/templates/paginaexemplo.html    | 126 +++++++++++++++++++++
+ 4 files changed, 219 insertions(+)
+
+commit 2e0c403665331557cf424f731bfb0ac7e7d4effd
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 19:27:47 2022 -0300
+
+    :lipstick: fragments the main user interface
+
+ .../templates/layout/fragments/navbar.html         |  40 ++++++++
+ .../templates/layout/fragments/paginacao.html      |  46 +++++++++
+ .../templates/layout/fragments/rodape.html         |  18 ++++
+ .../templates/layout/fragments/sidebar.html        | 112 +++++++++++++++++++++
+ 4 files changed, 216 insertions(+)
+
+commit 1ce4319071ea0796a9130015fcad6d4206f10713
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 19:22:57 2022 -0300
+
+    :children_crossing: add page errors
+
+ src/main/resources/templates/error.html     | 27 +++++++++++++++++++++++++++
+ src/main/resources/templates/error/403.html | 27 +++++++++++++++++++++++++++
+ src/main/resources/templates/error/404.html | 28 ++++++++++++++++++++++++++++
+ src/main/resources/templates/error/500.html | 27 +++++++++++++++++++++++++++
+ 4 files changed, 109 insertions(+)
+
+commit 606bcf0e335f5e5fcc304fb6f51a6072bc34ec45
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 19:20:44 2022 -0300
+
+    :lipstick: add diretory with css files, js files, and images files
+
+ src/main/resources/static/css/style.css            |   55 +
+ .../static/css/vendors/alertifyjs/alertify.min.css |    6 +
+ .../css/vendors/alertifyjs/bootstrap.min.css       |    6 +
+ .../css/vendors/bootstrap5/bootstrap-icons.css     | 1876 ++++++++++++++++++++
+ .../css/vendors/bootstrap5/bootstrap.min.css       |    7 +
+ .../css/vendors/bootstrap5/bootstrap.min.css.map   |    1 +
+ .../vendors/bootstrap5/fonts/bootstrap-icons.woff  |  Bin 0 -> 150592 bytes
+ .../vendors/bootstrap5/fonts/bootstrap-icons.woff2 |  Bin 0 -> 112440 bytes
+ src/main/resources/static/images/403.png           |  Bin 0 -> 57319 bytes
+ src/main/resources/static/images/404.png           |  Bin 0 -> 32847 bytes
+ src/main/resources/static/images/500.png           |  Bin 0 -> 54234 bytes
+ .../resources/static/images/Logo psicologo.svg     |   15 +
+ src/main/resources/static/images/erro.png          |  Bin 0 -> 26163 bytes
+ src/main/resources/static/images/logo.png          |  Bin 0 -> 36854 bytes
+ src/main/resources/static/js/codigoninjadogodoi.js |  181 ++
+ src/main/resources/static/js/script.js             |    0
+ .../static/js/vendors/alertifyjs/alertify.min.js   |    3 +
+ .../js/vendors/bootstrap5/bootstrap.bundle.min.js  |    7 +
+ .../vendors/bootstrap5/bootstrap.bundle.min.js.map |    1 +
+ .../static/js/vendors/jquery/jquery-3.6.0.min.js   |    2 +
+ 20 files changed, 2160 insertions(+)
+
+commit 316678cb3d643e61b04bd4222c2d5d05c966123c
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Dec 5 19:13:02 2022 -0300
+
+    :card_file_box: update sql senteces
+    
+    add IF NOT EXISTS in sql sentece
+
+ .../{db.migration => db/migration}/V01__cria_tabela_paciente.sql        | 2 +-
+ .../{db.migration => db/migration}/V02__cria_tabela_psicologo.sql       | 2 +-
+ .../{db.migration => db/migration}/V03__cria_tabela_consultas.sql       | 0
+ 3 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 45c1e17cf4d3c56478717bf31404853c1edc2b3d
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Wed Nov 30 00:46:38 2022 -0300
+
+    :wrench: organize configurations data base and flyway
+
+ pom.xml                                   | 10 ++--------
+ src/main/resources/application.properties | 15 +++++----------
+ 2 files changed, 7 insertions(+), 18 deletions(-)
+
+commit 681c974d59936fb01bf29f521706be9069ec03a5
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Nov 29 23:32:27 2022 -0300
+
+    :bug: fixed the sql sintaxe
+
+ .../{V01_cria_tabela_paciente.sql => V01__cria_tabela_paciente.sql}   | 4 ++--
+ .../{V02_cria_tabela_psicologo.sql => V02__cria_tabela_psicologo.sql} | 4 ++--
+ .../{V03_cria_tabela_consultas.sql => V03__cria_tabela_consultas.sql} | 0
+ 3 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 63ecfc5420978432ca48a11718846f24ccd3c901
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Nov 29 11:54:42 2022 -0300
+
+    :hammer: create interface repository Consulta
+
+ .../java/com/daw2/lindovaldo/repository/ConsultaRepository.java    | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit 08f93659e194dc2c8dfd0cc57d83c75c8cae15fa
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Nov 29 11:54:04 2022 -0300
+
+    :hammer: create class controller Consulta
+
+ .../lindovaldo/controller/ConsultaController.java     | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+
+commit f0c11727b16bb2a13fbc7123027cf939bb0ea6a7
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Nov 29 11:52:56 2022 -0300
+
+    :hammer: create class model Consulta
+
+ .../com/daw2/lindovaldo/model/ConsultaModel.java   | 58 +++++++++++++++++++++-
+ 1 file changed, 56 insertions(+), 2 deletions(-)
+
+commit 8a5e2b92939f57500253fa834435c3ae6dd6ae34
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Nov 29 11:51:37 2022 -0300
+
+    :wrench: replace data base for h2
+
+ src/main/resources/application.properties | 11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+
+commit 0ffff94a0cd47063db64b7dc01ceeb1e60dc78dc
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Nov 29 11:48:57 2022 -0300
+
+    :bug: error in service he was include annotation @service in class
+
+ src/main/java/com/daw2/lindovaldo/service/PacienteService.java | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 798be2a831afe452dcd36236c731fde01e011440
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Tue Nov 29 11:44:03 2022 -0300
+
+    :hammer: create class service Consulta
+
+ .../java/com/daw2/lindovaldo/service/ConsultaService.java   | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+
+commit 3f61a85ddf34e74305cc5658c4413192506e48e7
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 11:58:28 2022 -0300
+
+    :pop: error in aplication.properties banq
+
+ pom.xml                                     | 10 ++++++++--
+ src/main/java/com/daw2/lindovaldo/Main.java |  2 ++
+ src/main/resources/application.properties   |  2 +-
+ src/main/resources/log4j2.xml               |  4 ++--
+ 4 files changed, 13 insertions(+), 5 deletions(-)
+
+commit 875226cd9637674754f0a83380c92bb895bd7328
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 11:44:30 2022 -0300
+
+    :hammer: created class service Paciente
+
+ .../java/com/daw2/lindovaldo/service/PacienteService.java     | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+commit 097e14c2223b2e93ef461c83d19ae8ea4b5b9181
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 11:44:09 2022 -0300
+
+    :hammer: created interface repository Paciente
+
+ .../java/com/daw2/lindovaldo/repository/PacienteRepository.java     | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit c537a9f46dd5afbd396ba946cd99d0b2ad527f73
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 11:43:44 2022 -0300
+
+    :hammer: created class controller Paciente
+
+ .../daw2/lindovaldo/controller/PacienteController.java | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+
+commit 7ca38d488a913adfcf84d4a703ee989ca3c5116e
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 11:26:38 2022 -0300
+
+    :hammer: created class model Consulta
+
+ .../com/daw2/lindovaldo/model/ConsultaModel.java   | 26 ++++++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+
+commit 3618e55b1db9cf68f6b485522c9f9e6e7757162b
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 11:25:30 2022 -0300
+
+    :recycle: rename sequenceName in SequenceGenerator
+
+ src/main/java/com/daw2/lindovaldo/model/PacienteModel.java  | 2 +-
+ src/main/java/com/daw2/lindovaldo/model/PsicologoModel.java | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 56033ce882f5d8b692db5105324769727fbdd2a7
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 11:23:23 2022 -0300
+
+    :hammer: create enum Model Situation
+
+ .../com/daw2/lindovaldo/model/SituationModel.java    | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+
+commit 70b233ed037fb047dfe2885fc32ffcfb08baccbb
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 10:33:15 2022 -0300
+
+    :pencil2: rename Specialty for SpecialtyModel
+
+ src/main/java/com/daw2/lindovaldo/model/PsicologoModel.java | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 5e76cdf71ea623a090d90ca272a9740e8048cf09
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 10:30:32 2022 -0300
+
+    :passport_control: adding notation to class
+
+ src/main/java/com/daw2/lindovaldo/model/PacienteModel.java | 13 ++++++++-----
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+
+commit 6b526b6220fc637ea0c575dbd2f7b842d1c253d1
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 10:25:23 2022 -0300
+
+    :hammer: created enum model Specialty
+
+ .../com/daw2/lindovaldo/model/SpecialtyModel.java   | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
+commit 54b33bfd507f1690e2b569bfbc2099968db607ef
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 10:24:41 2022 -0300
+
+    :hammer: created class model Psicologo
+
+ .../com/daw2/lindovaldo/model/PsicologoModel.java  | 72 +++++++++++++++++++++-
+ 1 file changed, 71 insertions(+), 1 deletion(-)
+
+commit b980991d16a25858e8c8324468e1345ae4258d85
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 10:13:54 2022 -0300
+
+    :hammer: created class model Paciente
+
+ .../com/daw2/lindovaldo/model/ConsultaModel.java   |  4 ++
+ .../com/daw2/lindovaldo/model/PacienteModel.java   | 82 ++++++++++++++++++++++
+ .../com/daw2/lindovaldo/model/PsicologoModel.java  |  4 ++
+ 3 files changed, 90 insertions(+)
+
+commit 0eb1bd1ec15c47ca2af798704561b295664743f3
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 10:09:56 2022 -0300
+
+    :recycle: refactor specialty
+    
+    alter specialty define type TEXT for deafault NONE
+
+ src/main/resources/db.migration/V02_cria_tabela_psicologo.sql | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit 3f6063a526cfcd37ed9e7035e841d6e854d4947b
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 09:50:08 2022 -0300
+
+    :card_file_box: alter column specialty
+    
+    altering column specialty for type enum
+
+ src/main/resources/db.migration/V02_cria_tabela_psicologo.sql | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit b734b40428afc64b0f5d2ae9de5df9f27bcac6d7
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 09:39:55 2022 -0300
+
+    :card_file_box: create table consultas
+
+ src/main/resources/db.migration/V03_cria_tabela_consultas.sql | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit dea7ad81e486bff993680aa799eb5d199a228d63
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 09:39:29 2022 -0300
+
+    :card_file_box: create table psiclogo
+
+ src/main/resources/db.migration/V02_cria_tabela_psicologo.sql | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+commit 9576a09b20c1e5b5142428bec0cfc342e9410c7f
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 09:39:00 2022 -0300
+
+    :card_file_box: create table paciente
+
+ src/main/resources/db.migration/V01_cria_tabela_paciente.sql | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+commit 5c71ab3f1a662eebc168064f0ef3a0b49911c4e9
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 09:20:33 2022 -0300
+
+    :wrench: configuration initial files
+
+ pom.xml                                   | 127 ++++++++++++++++++++++++++++++
+ src/main/resources/application.properties |  38 +++++++++
+ src/main/resources/log4j2.xml             |  48 +++++++++++
+ 3 files changed, 213 insertions(+)
+
+commit 7587c0614c9b4e61153735222835004d8fa7cc4a
+Author: lindovaldo1 <lindovaldo.leao@estudante.iftm.edu.br>
+Date:   Mon Nov 28 09:14:41 2022 -0300
+
+    :tada: initil commit
+
+ .gitignore                                  | 67 +++++++++++++++++++++++++++++
+ src/main/java/com/daw2/lindovaldo/Main.java |  9 ++++
+ 2 files changed, 76 insertions(+)

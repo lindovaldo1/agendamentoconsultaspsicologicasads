@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<body>
+	<!-- offcanvas sidebar -->
+	<div class="offcanvas offcanvas-start bg-dark text-white sidebar-nav" tabindex="-1" id="sidebar" th:fragment="sidebar">
+		<div class="offcanvas-body">
+			<nav class="navbar-dark">
+				<ul class="navbar-nav">
+					<li>
+						<div class="small fw-bold text-uppercase px-3 mt-3 text-center">Opções</div>
+					</li>
+					<li class="my-2">
+						<hr class="dropdown-toggle-split" />
+					</li>
+
+					<!-- 1o elemento -->
+					<li>
+						<a class="nav-link px-3 sidebar-link text-white" data-bs-toggle="collapse" href="#consultas">
+							<span class="me-2">
+								<i class="bi bi-clock-fill"></i>
+							</span>
+							<span>Consultas</span>
+							<span class="ms-auto">
+								<span class="right-icon">
+									<i class="bi bi-chevron-down"></i>
+								</span>
+							</span>
+						</a>   
+						
+						<div class="collapse" id="consultas">
+							<ul class="navbar-nav ps-3">		
+
+								<div sec:authorize="hasRole('ROLE_PSICOLOGO')">									
+									<li>
+										<a th:href="@{/consultas/cadastrar}" class="nav-link px-3">
+											<span class="me-2">
+												<i class="bi bi-journal-bookmark-fill"></i>
+											</span>
+											<span class="text-white">Agendar</span>
+										</a>
+									</li>
+								</div>					
+
+								
+								<li>
+									<a th:href="@{/consultas/abrirpesquisar}" class="nav-link px-3">
+										<span class="me-2">
+											<i class="bi bi-search text-white"></i>
+										</span>
+										<span class="text-white">Pesquisar</span>
+									</a>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					
+					<!-- 2o elemento -->
+					<div sec:authorize="hasRole('ROLE_PSICOLOGO')">
+						<li>
+							<a class="nav-link px-3 sidebar-link text-white" data-bs-toggle="collapse" href="#pacientes">
+								<span class="me-2">
+									<i class="bi bi-person-fill"></i>
+								</span>
+								<span>Pacientes</span>
+								<span class="ms-auto">
+									<span class="right-icon">
+										<i class="bi bi-chevron-down"></i>
+									</span>
+								</span>
+							</a>   
+							
+							<div class="collapse" id="pacientes" th:classappend=" ${#strings.startsWith(#request.requestURI, '/pacientes')} ? show">
+								<ul class="navbar-nav ps-3">
+									<li>
+										<a th:href="@{/pacientes/cadastrar}" class="nav-link px-3">
+											<span class="me-2">
+												<i class="bi bi-plus-square text-white"></i>
+											</span>
+											<span class="text-white">Cadastrar</span>
+										</a>
+									</li>
+	
+									<div sec:authorize="hasRole('ROLE_PSICOLOGO')">	
+										<li>
+											<a th:href="@{/pacientes/abrirpesquisar}" class="nav-link px-3">
+												<span class="me-2">
+													<i class="bi bi-search text-white"></i>
+												</span>
+												<span class="text-white">Pesquisar</span>
+											</a>
+										</li>
+									</div>
+								</ul>
+							</div>
+						</li>
+					</div>
+
+					<!-- 3o elemento -->
+					<li>
+						<a class="nav-link px-3 sidebar-link text-white" data-bs-toggle="collapse" href="#psicologos">
+							<span class="me-2">
+								<i class="bi bi-clipboard-heart-fill"></i>
+							</span>
+							<span>Psicológos</span>
+							<span class="ms-auto">
+								<span class="right-icon">
+									<i class="bi bi-chevron-down"></i>
+								</span>
+							</span>
+						</a>
+						<div class="collapse" id="psicologos" th:classappend=" ${#strings.startsWith(#request.requestURI, '/psicologos')} ? show">
+							<ul class="navbar-nav ps-3">
+								<li>
+									<a th:href="@{/psicologos/abrirpesquisar}" class="nav-link px-3">
+										<span class="me-2">
+											<i class="bi bi-search text-white"></i>
+										</span>
+										<span class="text-white">Pesquisar</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					<!-- 4o elemento -->
+					<div sec:authorize="hasRole('ROLE_ADMIN')">
+						<li>
+							<a class="nav-link px-3 sidebar-link text-white" data-bs-toggle="collapse" href="#usuarios">
+								<span class="me-2">
+									<i class="bi bi-person-fill"></i>
+								</span>
+								<span>Usuários</span>
+								<span class="ms-auto">
+									<span class="right-icon">
+										<i class="bi bi-chevron-down"></i>
+									</span>
+								</span>
+							</a>   
+							
+							<div class="collapse" id="usuarios" th:classappend=" ${#strings.startsWith(#request.requestURI, '/usuarios')} ? show">
+								<ul class="navbar-nav ps-3">
+									<li>
+										<a th:href="@{/usuarios/cadastrar}" class="nav-link px-3">
+											<span class="me-2">
+												<i class="bi bi-plus-square text-white"></i>
+											</span>
+											<span class="text-white">Cadastrar</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</div>
+					
+					<!-- 4o elemento -->
+					<div sec:authorize="hasRole('ROLE_ADMIN')">
+						<li>
+							<a class="nav-link px-3 sidebar-link text-white" data-bs-toggle="collapse" href="#print">
+								<span class="me-2">
+									<i class="bi bi-printer"></i>
+								</span>
+								<span>Relatorio</span>
+								<span class="ms-auto">
+									<span class="right-icon">
+										<i class="bi bi-chevron-down"></i>
+									</span>
+								</span>
+							</a>   
+							
+							<div class="collapse" id="print" th:classappend=" ${#strings.startsWith(#request.requestURI, '/print')} ? show">
+								<ul class="navbar-nav ps-3">
+									<li>
+										<a th:href="@{/print/simples}" class="nav-link px-3">
+											<span class="me-2">
+												<i class="bi bi-filetype-pdf text-white"></i>
+											</span>
+											<span class="text-white">Baixar relatorio</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</div>
+					
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- !offcanvas sidebar -->
+</body>
+</html>

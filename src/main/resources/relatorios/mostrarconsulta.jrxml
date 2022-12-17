@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="mostrarconsulta" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="c09ec089-88ca-4768-a29d-45dbbf354a12">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="agendamentoconsultaspsicologicas"/>
+	<property name="com.jaspersoft.studio.unit." value="cm"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="cm"/>
+	<parameter name="IDPSICOLOGO" class="java.lang.Long"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT paciente.status,
+	paciente.cpf,
+	paciente.nome,
+	consulta.data,
+	consulta.horario
+FROM consulta,
+	paciente
+WHERE 
+	 consulta.codigo_paciente = paciente.codigo
+	 AND consulta.codigo_psicologo =  $P{IDPSICOLOGO}]]>
+	</queryString>
+	<field name="status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="status"/>
+		<property name="com.jaspersoft.studio.field.label" value="status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paciente"/>
+	</field>
+	<field name="cpf" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="cpf"/>
+		<property name="com.jaspersoft.studio.field.label" value="cpf"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paciente"/>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nome"/>
+		<property name="com.jaspersoft.studio.field.label" value="nome"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="paciente"/>
+	</field>
+	<field name="data" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="data"/>
+		<property name="com.jaspersoft.studio.field.label" value="data"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="consulta"/>
+	</field>
+	<field name="horario" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="horario"/>
+		<property name="com.jaspersoft.studio.field.label" value="horario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="consulta"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="108" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="20" width="100" height="30" uuid="e4b5ad88-2a1e-43aa-a090-8347c156ee5e"/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="20" width="100" height="30" uuid="5592312d-af95-4294-95f5-0460feefc24e"/>
+				<text><![CDATA[Nome:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="310" y="20" width="100" height="30" uuid="6555fd6c-4db8-412d-8095-dec7607d3145"/>
+				<textFieldExpression><![CDATA[$F{cpf}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="20" width="100" height="30" uuid="8ea27367-fe4b-421a-96af-c836eab0f31d"/>
+				<text><![CDATA[Cpf]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="50" width="100" height="30" uuid="7f50bf85-7609-4de3-8b00-92688483408c"/>
+				<textFieldExpression><![CDATA[$F{data}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="50" width="100" height="30" uuid="368b784d-f4ab-4aca-aefd-5b16b39c7e24"/>
+				<text><![CDATA[Data:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="310" y="50" width="100" height="30" uuid="9cfc77f3-ec52-4105-95d8-b4034de4a401"/>
+				<textFieldExpression><![CDATA[$F{horario}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="50" width="100" height="30" uuid="67a61d5c-40ab-4f0d-ae97-2cf4bd7af043"/>
+				<text><![CDATA[Horário]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="595" height="1" uuid="bc26976a-4caf-4867-99c8-d9581f57b2b1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="83" width="595" height="1" uuid="1a213694-1c03-4a77-aa88-fa7236aa873a"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>
